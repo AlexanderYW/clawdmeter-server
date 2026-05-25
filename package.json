@@ -1,7 +1,9 @@
 {
   "name": "clawdmeter-server",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "BLE host daemon for the Clawdmeter ESP32 Claude usage monitor (Node/Bun, cross-platform).",
+  "license": "MIT",
+  "funding": "https://github.com/sponsors/AlexanderYW",
   "type": "module",
   "bin": {
     "clawdmeter-server": "dist/index.js"
@@ -12,8 +14,20 @@
     "dev": "bun src/index.ts",
     "test": "bun test"
   },
+  "files": [
+    "dist",
+    "service"
+  ],
   "engines": {
     "node": ">=20"
+  },
+  "homepage": "https://github.com/AlexanderYW/clawdmeter-server#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com:AlexanderYW/clawdmeter-server.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AlexanderYW/clawdmeter-server/issues"
   },
   "dependencies": {
     "@abandonware/noble": "^1.9.2-25"
