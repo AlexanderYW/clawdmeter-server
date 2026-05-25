@@ -1,0 +1,13 @@
+[Unit]
+Description=Claude Usage Tracker Daemon (BLE, Node)
+Requires=bluetooth.target
+After=bluetooth.target
+
+[Service]
+Type=simple
+ExecStart=__NODE_BIN__ __DAEMON_PATH__
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=default.target

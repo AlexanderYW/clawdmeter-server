@@ -1,0 +1,25 @@
+{
+  "name": "clawdmeter-server",
+  "version": "0.0.0",
+  "description": "BLE host daemon for the Clawdmeter ESP32 Claude usage monitor (Node/Bun, cross-platform).",
+  "type": "module",
+  "bin": {
+    "clawdmeter-server": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "bun src/index.ts",
+    "test": "bun test"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@abandonware/noble": "^1.9.2-25"
+  },
+  "devDependencies": {
+    "@types/node": "^24.12.4",
+    "typescript": "^6.0.3"
+  }
+}
